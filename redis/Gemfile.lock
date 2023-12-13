@@ -14,60 +14,66 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
-    connection_pool (2.4.0)
+    connection_pool (2.4.1)
     docker-api (2.2.0)
       excon (>= 0.47.0)
       multi_json
-    excon (0.99.0)
-    json (2.6.3)
+    excon (0.105.0)
+    json (2.7.1)
     language_server-protocol (3.17.0.3)
-    lint_roller (1.0.0)
-    minitest (5.18.0)
-    minitest-hooks (1.5.0)
+    lint_roller (1.1.0)
+    minitest (5.20.0)
+    minitest-hooks (1.5.1)
       minitest (> 5.3)
     multi_json (1.15.0)
     parallel (1.23.0)
-    parser (3.2.2.1)
+    parser (3.2.2.4)
       ast (~> 2.4.1)
+      racc
+    racc (1.7.3)
     rainbow (3.1.1)
-    rake (13.0.6)
-    redis (5.0.6)
-      redis-client (>= 0.9.0)
-    redis-client (0.14.1)
+    rake (13.1.0)
+    redis (5.0.8)
+      redis-client (>= 0.17.0)
+    redis-client (0.19.0)
       connection_pool
-    regexp_parser (2.8.0)
-    rexml (3.2.5)
-    rubocop (1.50.2)
+    regexp_parser (2.8.3)
+    rexml (3.2.6)
+    rubocop (1.57.2)
       json (~> 2.3)
+      language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
-      parser (>= 3.2.0.0)
+      parser (>= 3.2.2.4)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.28.0, < 2.0)
+      rubocop-ast (>= 1.28.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.28.1)
+    rubocop-ast (1.30.0)
       parser (>= 3.2.1.0)
-    rubocop-performance (1.16.0)
+    rubocop-performance (1.19.1)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.13.0)
-    standard (1.28.2)
+    standard (1.32.1)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
-      rubocop (~> 1.50.2)
+      rubocop (~> 1.57.2)
       standard-custom (~> 1.0.0)
-      standard-performance (~> 1.0.1)
-    standard-custom (1.0.0)
+      standard-performance (~> 1.2)
+    standard-custom (1.0.2)
       lint_roller (~> 1.0)
-    standard-performance (1.0.1)
-      lint_roller (~> 1.0)
-      rubocop-performance (~> 1.16.0)
-    unicode-display_width (2.4.2)
+      rubocop (~> 1.50)
+    standard-performance (1.2.1)
+      lint_roller (~> 1.1)
+      rubocop-performance (~> 1.19.1)
+    unicode-display_width (2.5.0)
 
 PLATFORMS
-  arm64-darwin-21
+  arm64-darwin
+  x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   minitest (~> 5.0)
@@ -79,4 +85,4 @@ DEPENDENCIES
   testcontainers-redis!
 
 BUNDLED WITH
-   2.4.1
+   2.4.22
